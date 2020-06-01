@@ -37,27 +37,27 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Steps\TestData\Customers\ClaimsTestData.Designer.cs">
+    <Compile Update="CorporateWebsite\Steps\TestData\Customers\ClaimsTestData.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>ClaimsTestData.resx</DependentUpon>
     </Compile>
-    <Compile Update="Steps\TestData\CopyrightTestData.Designer.cs">
+    <Compile Update="CorporateWebsite\Steps\TestData\CopyrightTestData.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>CopyrightTestData.resx</DependentUpon>
     </Compile>
-    <Compile Update="Steps\TestData\Customers\ManageYourPolicyTestData.Designer.cs">
+    <Compile Update="CorporateWebsite\Steps\TestData\Customers\ManageYourPolicyTestData.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>ManageYourPolicyTestData.resx</DependentUpon>
     </Compile>
-    <Compile Update="Steps\TestData\Customers\FileAClaimTestData.Designer.cs">
+    <Compile Update="CorporateWebsite\Steps\TestData\Customers\FileAClaimTestData.Designer.cs">
       <DependentUpon>FileAClaimTestData.resx</DependentUpon>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
-    <Compile Update="Steps\TestData\HomePageTestData.Designer.cs">
+    <Compile Update="CorporateWebsite\Steps\TestData\HomePageTestData.Designer.cs">
       <DependentUpon>HomePageTestData.resx</DependentUpon>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -65,23 +65,23 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Steps\TestData\Customers\ClaimsTestData.resx">
+    <EmbeddedResource Update="CorporateWebsite\Steps\TestData\Customers\ClaimsTestData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ClaimsTestData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="Steps\TestData\CopyrightTestData.resx">
+    <EmbeddedResource Update="CorporateWebsite\Steps\TestData\CopyrightTestData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CopyrightTestData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="Steps\TestData\Customers\ManageYourPolicyTestData.resx">
+    <EmbeddedResource Update="CorporateWebsite\Steps\TestData\Customers\ManageYourPolicyTestData.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ManageYourPolicyTestData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="Steps\TestData\Customers\FileAClaimTestData.resx">
+    <EmbeddedResource Update="CorporateWebsite\Steps\TestData\Customers\FileAClaimTestData.resx">
       <LastGenOutput>FileAClaimTestData.Designer.cs</LastGenOutput>
       <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Steps\TestData\HomePageTestData.resx">
+    <EmbeddedResource Update="CorporateWebsite\Steps\TestData\HomePageTestData.resx">
       <LastGenOutput>HomePageTestData.Designer.cs</LastGenOutput>
       <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
@@ -91,6 +91,10 @@
     <None Update="appsettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="PolicyAdminSystem\PersistenceModels\" />
   </ItemGroup>
 
 </Project>

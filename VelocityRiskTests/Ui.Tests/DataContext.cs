@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using Ui.Tests.PersistenceModels;
-using Ui.Tests.Steps.TestData.Customers;
+using Ui.Tests.CorporateWebsite.PersistenceModels;
+using Ui.Tests.CorporateWebsite.Steps.TestData.Customers;
 
 namespace Ui.Tests
 {

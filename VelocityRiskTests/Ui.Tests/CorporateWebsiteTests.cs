@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using NUnit.Framework;
-using Ui.Tests.PersistenceModels;
-using Ui.Tests.Steps;
-using Ui.Tests.Steps.Customers;
-using Ui.Tests.Steps.TestData.Customers;
+using Ui.Tests.CorporateWebsite.PersistenceModels;
+using Ui.Tests.CorporateWebsite.Steps;
+using Ui.Tests.CorporateWebsite.Steps.Customers;
+using Ui.Tests.CorporateWebsite.Steps.TestData.Customers;
 
 namespace Ui.Tests
 {
