@@ -6,8 +6,16 @@ namespace Ui.Tests.PolicyAdminSystem.PageObjectModels
     {
         public LoginPage(IWebDriver driver) : base(driver)
         {
-            // TODO add a proper value for this property
-            PageUrl = "";
+            PageUrl = "https://velocity-uat.britecorepro.com/login/ko_login";
         }
+
+        public IWebElement UserNameTextBox => Driver.FindElement(By.CssSelector("#username"));
+        public IWebElement PasswordTextBox => Driver.FindElement(By.CssSelector("#password"));
+        public IWebElement CantRememberLink => Driver.FindElement(By.CssSelector("#recoverEmail"));
+        public IWebElement LoginButton => Driver.FindElement(By.CssSelector("#login"));
+
+        public IWebElement DisclaimerLink => Driver.FindElement(By.XPath("//a[contains(text(), 'Disclaimer')]"));
+        public IWebElement TermsOfUseLink => Driver.FindElement(By.XPath("//a[contains(text(), 'Terms of Use')]"));
+        public IWebElement PrivacyPolicyLink => Driver.FindElement(By.XPath("//a[contains(text(), 'Privacy Policy')]"));
     }
 }
