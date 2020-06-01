@@ -1,8 +1,9 @@
 ﻿using OpenQA.Selenium;
+using Ui.Tests.Common;
 
 namespace Ui.Tests.CorporateWebsite.PageObjectModels.Components
 {
-    public class Footer : BaseComponent
+    public class Footer : CommonBaseComponent
     {
         #region Corporate Office
 
