@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using Ui.Tests.Common;
 
 namespace Ui.Tests
 {

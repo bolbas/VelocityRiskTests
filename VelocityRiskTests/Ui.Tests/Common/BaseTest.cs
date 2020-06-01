@@ -5,7 +5,7 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.IE;
 using Ui.Configuration;
 
-namespace Ui.Common
+namespace Ui.Tests.Common
 {
     public abstract class BaseTest
     {

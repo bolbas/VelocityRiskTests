@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using NUnit.Framework;
+using Ui.Tests.Common;
 using Ui.Tests.CorporateWebsite.PersistenceModels;
 using Ui.Tests.CorporateWebsite.Steps;
 using Ui.Tests.CorporateWebsite.Steps.Customers;
