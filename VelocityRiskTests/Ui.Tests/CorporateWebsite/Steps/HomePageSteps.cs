@@ -6,7 +6,7 @@ using Ui.Tests.CorporateWebsite.Steps.TestData;
 
 namespace Ui.Tests.CorporateWebsite.Steps
 {
-    public class HomePageSteps : BaseSteps<HomePage>
+    public class HomePageSteps : CorporateWebsiteBaseSteps<HomePage>
     {
         public HomePageSteps(IWebDriver driver) : base(driver)
         {

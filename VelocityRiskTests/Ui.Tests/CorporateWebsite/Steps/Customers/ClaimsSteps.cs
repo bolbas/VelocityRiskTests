@@ -5,7 +5,7 @@ using Ui.Tests.CorporateWebsite.PersistenceModels;
 
 namespace Ui.Tests.CorporateWebsite.Steps.Customers
 {
-    public class ClaimsSteps : BaseSteps<ClaimsPage>
+    public class ClaimsSteps : CorporateWebsiteBaseSteps<ClaimsPage>
     {
         public ClaimsSteps(IWebDriver driver) : base(driver)
         {

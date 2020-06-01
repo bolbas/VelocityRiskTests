@@ -3,7 +3,6 @@ using System.Linq;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
-using Ui.Tests.CorporateWebsite.PageObjectModels;
 
 namespace Ui.Tests.Common
 {
@@ -16,25 +15,6 @@ namespace Ui.Tests.Common
         public CommonBaseSteps(IWebDriver driver)
         {
             Driver = driver;
-        }
-
-        private void NavigateToHomePage()
-        {
-            var homePage = new HomePage(Driver);
-            Driver.Navigate().GoToUrl(homePage.PageUrl);
-        }
-
-        public virtual void NavigateTo()
-        {
-            if (Page == null)
-            {
-                NavigateToHomePage();
-            }
-            else
-            {
-                SwitchBackToDefaultTab();
-                Driver.Navigate().GoToUrl(Page.PageUrl);
-            }
         }
 
         public int GetCurrentTabsCount()

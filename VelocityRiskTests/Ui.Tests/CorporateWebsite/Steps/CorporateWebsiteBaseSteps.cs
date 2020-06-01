@@ -1,18 +1,38 @@
 ﻿using OpenQA.Selenium;
 using Shouldly;
 using Ui.Tests.Common;
+using Ui.Tests.CorporateWebsite.PageObjectModels;
 using Ui.Tests.CorporateWebsite.PageObjectModels.Components;
 
 namespace Ui.Tests.CorporateWebsite.Steps
 {
-    public class BaseSteps<TPage> : CommonBaseSteps<TPage>
+    public class CorporateWebsiteBaseSteps<TPage> : CommonBaseSteps<TPage>
         where TPage : CommonBasePage
     {
         protected MenuBar MenuBar;
 
-        public BaseSteps(IWebDriver driver) : base(driver)
+        public CorporateWebsiteBaseSteps(IWebDriver driver) : base(driver)
         {
             MenuBar = new MenuBar(Driver);
+        }
+
+        private void NavigateToHomePage()
+        {
+            var homePage = new HomePage(Driver);
+            Driver.Navigate().GoToUrl(homePage.PageUrl);
+        }
+
+        public virtual void NavigateTo()
+        {
+            if (Page == null)
+            {
+                NavigateToHomePage();
+            }
+            else
+            {
+                SwitchBackToDefaultTab();
+                Driver.Navigate().GoToUrl(Page.PageUrl);
+            }
         }
 
         public void VerifyPageUrl(string expectedUrl, string additionalMessage = "")

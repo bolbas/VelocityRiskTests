@@ -4,7 +4,7 @@ using Ui.Tests.CorporateWebsite.PageObjectModels;
 
 namespace Ui.Tests.CorporateWebsite.Steps
 {
-    public class AboutUsPageSteps : BaseSteps<WhoWeArePage>
+    public class AboutUsPageSteps : CorporateWebsiteBaseSteps<WhoWeArePage>
     {
         public AboutUsPageSteps(IWebDriver driver) : base(driver)
         {

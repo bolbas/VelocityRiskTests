@@ -2,7 +2,7 @@
 
 namespace Ui.Tests.CorporateWebsite.PageObjectModels
 {
-    public class ManageYourPolicyPage : BasePage
+    public class ManageYourPolicyPage : CorporateWebsiteBasePage
     {
         public ManageYourPolicyPage(IWebDriver driver) : base(driver)
         {

@@ -4,7 +4,7 @@ using Ui.Tests.CorporateWebsite.PageObjectModels;
 
 namespace Ui.Tests.CorporateWebsite.Steps.Customers
 {
-    public class ManageYourPolicySteps : BaseSteps<ManageYourPolicyPage>
+    public class ManageYourPolicySteps : CorporateWebsiteBaseSteps<ManageYourPolicyPage>
     {
         public ManageYourPolicySteps(IWebDriver driver) : base(driver)
         {

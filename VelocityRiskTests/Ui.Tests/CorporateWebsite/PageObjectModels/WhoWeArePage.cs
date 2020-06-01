@@ -2,7 +2,7 @@
 
 namespace Ui.Tests.CorporateWebsite.PageObjectModels
 {
-    public class WhoWeArePage : BasePage
+    public class WhoWeArePage : CorporateWebsiteBasePage
     {
         public WhoWeArePage(IWebDriver driver) : base(driver)
         {

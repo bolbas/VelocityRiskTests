@@ -3,7 +3,7 @@ using Ui.Tests.CorporateWebsite.PageObjectModels;
 
 namespace Ui.Tests.CorporateWebsite.Steps.Customers
 {
-    public class MakeAPaymentSteps : BaseSteps<MakePaymentPage>
+    public class MakeAPaymentSteps : CorporateWebsiteBaseSteps<MakePaymentPage>
     {
         public MakeAPaymentSteps(IWebDriver driver) : base(driver)
         {

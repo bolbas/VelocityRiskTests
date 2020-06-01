@@ -3,7 +3,7 @@ using Ui.Tests.CorporateWebsite.PageObjectModels.Components;
 
 namespace Ui.Tests.CorporateWebsite.PageObjectModels
 {
-    public class HomePage : BasePage
+    public class HomePage : CorporateWebsiteBasePage
     {
         public MenuBar MenuBar { get; set; }
 
