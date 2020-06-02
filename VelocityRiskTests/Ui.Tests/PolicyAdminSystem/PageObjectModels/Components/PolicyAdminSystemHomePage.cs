@@ -1,11 +1,10 @@
 ﻿using OpenQA.Selenium;
-using Ui.Tests.Common;
 
 namespace Ui.Tests.PolicyAdminSystem.PageObjectModels.Components
 {
-    public class LogedInUserViewPage : CommonBasePage
+    public class PolicyAdminSystemHomePage : PolicyAdminSystemBasePage
     {
-        public LogedInUserViewPage(IWebDriver driver) : base(driver) { }
+        public PolicyAdminSystemHomePage(IWebDriver driver) : base(driver) { }
 
         public IWebElement HeaderLogoLink => Driver.FindElement(By.CssSelector(".bc-nav__logo"));
         public IWebElement HeaderNewQuoteLink => Driver.FindElement(By.CssSelector("header a[title='New Quote']"));

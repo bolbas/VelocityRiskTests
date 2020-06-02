@@ -3,7 +3,7 @@ using Ui.Tests.PolicyAdminSystem.PageObjectModels.Components;
 
 namespace Ui.Tests.PolicyAdminSystem.PageObjectModels
 {
-    public class DashboardPage : LogedInUserViewPage
+    public class DashboardPage : PolicyAdminSystemHomePage
     {
         public DashboardPage(IWebDriver driver) : base(driver)
         {

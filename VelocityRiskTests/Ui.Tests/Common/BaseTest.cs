@@ -1,11 +1,11 @@
 ﻿using System;
-using Microsoft.Extensions.Configuration;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.IE;
+using Ui.Configuration;
 
-namespace Ui.Tests
+namespace Ui.Common
 {
     public abstract class BaseTest
     {
