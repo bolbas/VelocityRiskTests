@@ -6,11 +6,11 @@ using Ui.Tests.CorporateWebsite.Steps.TestData;
 
 namespace Ui.Tests.CorporateWebsite.Steps
 {
-    public class HomePageSteps : CorporateWebsiteBaseSteps<HomePage>
+    public class HomePageSteps : CorporateWebsiteBaseSteps<CorporateWebsiteHomePage>
     {
         public HomePageSteps(IWebDriver driver) : base(driver)
         {
-            Page = new HomePage(Driver);
+            Page = new CorporateWebsiteHomePage(Driver);
         }
 
         public void VerifyLogoIsPresent()

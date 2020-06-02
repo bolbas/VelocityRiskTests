@@ -17,6 +17,21 @@ namespace Ui.Tests.Common
             Driver = driver;
         }
 
+        public virtual void NavigateToPage()
+        {
+            NavidateToCurrentPageUrl();
+        }
+
+        protected void NavigateToPageByUrl(string url)
+        {
+            Driver.Navigate().GoToUrl(url);
+        }
+
+        protected void NavidateToCurrentPageUrl()
+        {
+            NavigateToPageByUrl(Page.PageUrl);
+        }
+
         public int GetCurrentTabsCount()
         {
             return Driver.WindowHandles.Count;

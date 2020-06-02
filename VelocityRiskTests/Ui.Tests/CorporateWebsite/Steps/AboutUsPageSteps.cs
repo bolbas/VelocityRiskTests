@@ -11,10 +11,10 @@ namespace Ui.Tests.CorporateWebsite.Steps
             Page = new WhoWeArePage(Driver);
         }
 
-        public void NavigateToPage()
+        public override void NavigateToPage()
         {
-            NavigateTo();
-            var homePage = new HomePage(Driver);
+            base.NavigateToPage();
+            var homePage = new CorporateWebsiteHomePage(Driver);
             homePage.AboutUsMenuItem.Click();
             homePage.WhoWeAreMenuItem.Click();
         }

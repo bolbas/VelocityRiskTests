@@ -37,6 +37,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Common\ExceptionMessages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ExceptionMessages.resx</DependentUpon>
+    </Compile>
     <Compile Update="CorporateWebsite\Steps\TestData\Customers\ClaimsTestData.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -62,9 +67,18 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
+    <Compile Update="PolicyAdminSystem\Steps\TestData\LoginPageTestData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LoginPageTestData.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Common\ExceptionMessages.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ExceptionMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="CorporateWebsite\Steps\TestData\Customers\ClaimsTestData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ClaimsTestData.Designer.cs</LastGenOutput>
@@ -84,6 +98,10 @@
     <EmbeddedResource Update="CorporateWebsite\Steps\TestData\HomePageTestData.resx">
       <LastGenOutput>HomePageTestData.Designer.cs</LastGenOutput>
       <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PolicyAdminSystem\Steps\TestData\LoginPageTestData.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LoginPageTestData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 

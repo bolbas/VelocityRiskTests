@@ -11,7 +11,13 @@ namespace Ui.Tests.PolicyAdminSystem.PageObjectModels
 
         public IWebElement UserNameTextBox => Driver.FindElement(By.CssSelector("#username"));
         public IWebElement PasswordTextBox => Driver.FindElement(By.CssSelector("#password"));
+
         public IWebElement CantRememberLink => Driver.FindElement(By.CssSelector("#recoverEmail"));
+        public IWebElement CantRememberModalWindowCloseButton => Driver.FindElement(By.CssSelector(".modal-header button"));
+        public IWebElement CantRememberEmailTextBox => Driver.FindElement(By.XPath("//label[contains(text(), 'Email Address')]/input"));
+        public IWebElement CantRememberOkButton => Driver.FindElement(By.CssSelector(".modal-body .btn-primary"));
+        public IWebElement CantRememberCancelButton => Driver.FindElement(By.CssSelector(".modal-body .btn-default"));
+
         public IWebElement LoginButton => Driver.FindElement(By.CssSelector("#login"));
 
         public IWebElement DisclaimerLink => Driver.FindElement(By.XPath("//a[contains(text(), 'Disclaimer')]"));

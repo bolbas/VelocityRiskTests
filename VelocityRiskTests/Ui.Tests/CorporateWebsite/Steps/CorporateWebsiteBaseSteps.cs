@@ -16,22 +16,20 @@ namespace Ui.Tests.CorporateWebsite.Steps
             MenuBar = new MenuBar(Driver);
         }
 
-        private void NavigateToHomePage()
-        {
-            var homePage = new HomePage(Driver);
-            Driver.Navigate().GoToUrl(homePage.PageUrl);
-        }
-
-        public virtual void NavigateTo()
+        public override void NavigateToPage()
         {
             if (Page == null)
             {
-                NavigateToHomePage();
+                NavigateToPageByUrl(new CorporateWebsiteHomePage(Driver).PageUrl);
             }
             else
             {
-                SwitchBackToDefaultTab();
-                Driver.Navigate().GoToUrl(Page.PageUrl);
+                if (GetCurrentTabsCount() > 1)
+                {
+                    SwitchBackToDefaultTab();
+                }
+
+                NavidateToCurrentPageUrl();
             }
         }
 

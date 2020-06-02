@@ -2,7 +2,7 @@
 
 namespace Ui.Tests.CorporateWebsite.PageObjectModels
 {
-    public class ClaimsPage : HomePage
+    public class ClaimsPage : CorporateWebsiteHomePage
     {
         public IWebElement ExpandAllButton => Driver.FindElement(By.ClassName("expand_all_btn"));
 

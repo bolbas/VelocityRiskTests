@@ -3,7 +3,7 @@ using Ui.Tests.CorporateWebsite.PageObjectModels.Components;
 
 namespace Ui.Tests.CorporateWebsite.PageObjectModels
 {
-    public class HomePage : CorporateWebsiteBasePage
+    public class CorporateWebsiteHomePage : CorporateWebsiteBasePage
     {
         public MenuBar MenuBar { get; set; }
 
@@ -13,7 +13,7 @@ namespace Ui.Tests.CorporateWebsite.PageObjectModels
 
         public CookieInfo CookieInfo { get; set; }
 
-        public HomePage(IWebDriver driver) : base(driver)
+        public CorporateWebsiteHomePage(IWebDriver driver) : base(driver)
         {
             MenuBar = new MenuBar(driver);
             Header = new Header(driver);

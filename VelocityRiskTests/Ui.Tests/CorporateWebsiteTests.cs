@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using NUnit.Framework;
+using Ui.Common;
 using Ui.Tests.CorporateWebsite.PersistenceModels;
 using Ui.Tests.CorporateWebsite.Steps;
 using Ui.Tests.CorporateWebsite.Steps.Customers;
@@ -36,7 +37,7 @@ namespace Ui.Tests
         [SetUp]
         public void BeforEachTest()
         {
-            _homePageSteps.NavigateTo();
+            _homePageSteps.NavigateToPage();
             _tabsCountBeforeEachTest = _homePageSteps.GetCurrentTabsCount();
         }
 
@@ -75,7 +76,7 @@ namespace Ui.Tests
         [TestCaseSource(nameof(PanelInfoExpected))]
         public void TestCase_04_Claims_PanelItemsAreCorrect(PanelItem panelItem)
         {
-            _claimsSteps.NavigateTo();
+            _claimsSteps.NavigateToPage();
             _claimsSteps.VerifyPanelItemPresented(panelItem);
             _claimsSteps.ExpandPanelItem(panelItem);
             _claimsSteps.VerifyPanelContent(panelItem);
@@ -84,7 +85,7 @@ namespace Ui.Tests
         [Test]
         public void TestCase_05_FileAClaimLinksAreCorrect()
         {
-            _claimsSteps.NavigateTo();
+            _claimsSteps.NavigateToPage();
             _claimsSteps.ClickPanel(ClaimsTestData.FileClaimTitle);
             _claimsSteps.VerifyOneLinkFromFileAClaimSection(FileAClaimTestData.FileAClaimHomeownersExpectedUrl, "homeowners");
             _claimsSteps.VerifyOneLinkFromFileAClaimSection(FileAClaimTestData.FileAClaimSmallCommercialExpectedUrl, "small commercial");
