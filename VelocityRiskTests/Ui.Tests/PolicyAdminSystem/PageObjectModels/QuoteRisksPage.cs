@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 
 namespace Ui.Tests.PolicyAdminSystem.PageObjectModels
 {
@@ -31,17 +32,17 @@ namespace Ui.Tests.PolicyAdminSystem.PageObjectModels
 
         public IWebElement CountyParish => Driver.FindElement(By.XPath("//strong[@data-test-id='policy-wizard-builder-countyparish-category-input']"));
 
-        public IWebElement OccupancySelect => Driver.FindElement(By.XPath("//select[@data-test-id= 'policy-wizard-builder-occupancy-category-input']/parent::label"));
+        public SelectElement OccupancySelect => new SelectElement(Driver.FindElement(By.XPath("//select[@data-test-id= 'policy-wizard-builder-occupancy-category-input']")));
 
-        public IWebElement BuildingConstructionSelect => Driver.FindElement(By.XPath("//select[@data-test-id='policy-wizard-builder-building-construction-category-input']/parent::label"));
+        public SelectElement BuildingConstructionSelect => new SelectElement(Driver.FindElement(By.XPath("//select[@data-test-id='policy-wizard-builder-building-construction-category-input']")));
 
-        public IWebElement RoofShapeSelect => Driver.FindElement(By.XPath("//span[@data-test-id='policy-wizard-builder-roof-shape-category-label']/ancestor::label[contains(@class, 'bc-form__label')]"));
+        public SelectElement RoofShapeSelect => new SelectElement(Driver.FindElement(By.XPath("//select[@data-test-id='policy-wizard-builder-roof-shape-category-input']")));
 
         public IWebElement BuildingYearBuiltInput => Driver.FindElement(By.XPath("//input[@data-test-id='policy-wizard-builder-building-year-built-category-input']"));
 
         public IWebElement NumberOfStories => Driver.FindElement(By.XPath("//span[@data-test-id='policy-wizard-builder-number-of-stories-category-label']/ancestor::div[contains(@class, 'bc-form__label')]"));
 
-        public IWebElement RoofReplacementYearSelect => Driver.FindElement(By.XPath("//span[@data-test-id='policy-wizard-builder-roof-replacement-year-category-label']/ancestor::label[contains(@class, 'bc-form__label')]"));
+        public SelectElement RoofReplacementYearSelect => new SelectElement(Driver.FindElement(By.XPath("//select[@data-test-id='policy-wizard-builder-roof-replacement-year-category-input']")));
 
         public IWebElement ProtectionClass => Driver.FindElement(By.XPath("//strong[@data-test-id='policy-wizard-builder-protection-class-category-input']"));
 
@@ -53,21 +54,21 @@ namespace Ui.Tests.PolicyAdminSystem.PageObjectModels
 
         public IWebElement WhatIsTheRoofCondition => Driver.FindElement(By.XPath("//span[@data-test-id='policy-wizard-builder-what-is-the-roof-condition-category-label']/ancestor::div[contains(@class, 'bc-form__label')]"));
         
-        public IWebElement RoofAnchorageSelect => Driver.FindElement(By.XPath("//span[@data-test-id='policy-wizard-builder-roof-anchorage-category-label']/ancestor::label[contains(@class, 'bc-form__label')]"));
+        public SelectElement RoofAnchorageSelect => new SelectElement(Driver.FindElement(By.XPath("//select[@data-test-id='policy-wizard-builder-roof-anchorage-category-input']")));
 
-        public IWebElement RoofCoverSelect => Driver.FindElement(By.XPath("//span[@data-test-id='policy-wizard-builder-roof-cover-category-label']/ancestor::label[contains(@class, 'bc-form__label')]"));
+        public SelectElement RoofCoverSelect => new SelectElement(Driver.FindElement(By.XPath("//select[@data-test-id='policy-wizard-builder-roof-cover-category-input']")));
 
-        public IWebElement RoofDeckSelect => Driver.FindElement(By.XPath("//span[@data-test-id='policy-wizard-builder-roof-deck-category-label']/ancestor::label[contains(@class, 'bc-form__label')]"));
+        public SelectElement RoofDeckSelect => new SelectElement(Driver.FindElement(By.XPath("//select[@data-test-id='policy-wizard-builder-roof-deck-category-input']")));
 
-        public IWebElement RoofDeckAttachmentSelect => Driver.FindElement(By.XPath("//span[@data-test-id='policy-wizard-builder-roof-deck-attachment-category-label']/ancestor::label[contains(@class, 'bc-form__label')]"));
+        public SelectElement RoofDeckAttachmentSelect => new SelectElement(Driver.FindElement(By.XPath("//select[@data-test-id='policy-wizard-builder-roof-deck-attachment-category-input']")));
 
         public IWebElement DoesMoreThan20EifsExistsOnTheBuilding => Driver.FindElement(By.XPath("//span[@data-test-id='policy-wizard-builder-does-more-than-20-eifs-exists-on-the-building-category-label']/ancestor::div[contains(@class, 'bc-form__label')]"));
 
-        public IWebElement YearPlumbingWasLastUpdatedSelect => Driver.FindElement(By.XPath("//span[@data-test-id='policy-wizard-builder-year-plumbing-was-last-updated-category-label']/ancestor::label[contains(@class, 'bc-form__label')]"));
+        public SelectElement YearPlumbingWasLastUpdatedSelect => new SelectElement(Driver.FindElement(By.XPath("//select[@data-test-id='policy-wizard-builder-year-plumbing-was-last-updated-category-input']")));
 
-        public IWebElement YearHvacWasLastUpdatedSelect => Driver.FindElement(By.XPath("//span[@data-test-id='policy-wizard-builder-year-hvac-was-last-updated-category-label']/ancestor::label[contains(@class, 'bc-form__label')]"));
+        public SelectElement YearHvacWasLastUpdatedSelect => new SelectElement(Driver.FindElement(By.XPath("//select[@data-test-id='policy-wizard-builder-year-hvac-was-last-updated-category-input']")));
 
-        public IWebElement YearElectricalWasLastUpdatedSelect => Driver.FindElement(By.XPath("policy-wizard-builder-year-electrical-was-last-updated-category-label"));
+        public SelectElement YearElectricalWasLastUpdatedSelect => new SelectElement(Driver.FindElement(By.XPath("//select[@data-test-id='policy-wizard-builder-year-electrical-was-last-updated-category-input']")));
         
         public IWebElement CommentsInput => Driver.FindElement(By.XPath("//input[@data-test-id='policy-wizard-user-input-comments']"));
 
