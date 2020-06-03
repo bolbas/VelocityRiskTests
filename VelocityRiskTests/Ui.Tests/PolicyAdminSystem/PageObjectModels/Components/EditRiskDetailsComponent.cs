@@ -1,9 +1,10 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using Ui.Tests.Common;
 
 namespace Ui.Tests.PolicyAdminSystem.PageObjectModels.Components
 {
-    public class EditRiskDetailsComponent : PolicyAdminSystemBasePage
+    public class EditRiskDetailsComponent : CommonBaseComponent
     {
         public EditRiskDetailsComponent(IWebDriver driver) : base(driver)
         {
