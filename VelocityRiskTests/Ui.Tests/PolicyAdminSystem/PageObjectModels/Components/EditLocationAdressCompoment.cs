@@ -1,8 +1,9 @@
 ﻿using OpenQA.Selenium;
+using Ui.Tests.Common;
 
 namespace Ui.Tests.PolicyAdminSystem.PageObjectModels.Components
 {
-    public class EditLocationAdressCompoment : PolicyAdminSystemBasePage
+    public class EditLocationAdressCompoment : CommonBaseComponent
     {
         public EditLocationAdressCompoment(IWebDriver driver) : base(driver)
         {
