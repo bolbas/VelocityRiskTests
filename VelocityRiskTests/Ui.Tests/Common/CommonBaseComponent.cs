@@ -2,13 +2,11 @@
 
 namespace Ui.Tests.Common
 {
-    public abstract class CommonBasePage
+    public abstract class CommonBaseComponent
     {
         protected readonly IWebDriver Driver;
 
-        public string PageUrl;
-
-        protected CommonBasePage(IWebDriver driver)
+        public CommonBaseComponent(IWebDriver driver)
         {
             Driver = driver;
         }

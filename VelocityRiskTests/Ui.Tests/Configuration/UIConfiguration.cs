@@ -1,4 +1,4 @@
-﻿namespace Ui.Tests
+﻿namespace Ui.Configuration
 {
     public class UIConfiguration
     {

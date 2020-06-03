@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-namespace Ui.Tests
+namespace Ui.Configuration
 {
     public static class ConfigHelpers
     {

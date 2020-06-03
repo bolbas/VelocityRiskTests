@@ -1,8 +1,9 @@
 ﻿using OpenQA.Selenium;
+using Ui.Tests.Common;
 
 namespace Ui.Tests.CorporateWebsite.PageObjectModels.Components
 {
-    public class CookieInfo : BaseComponent
+    public class CookieInfo : CommonBaseComponent
     {
         public IWebElement Disclaimer => Driver.FindElement(By.XPath("//div[@id='cookie-law-info-bar']//a[@href= 'https://velocityrisk.com/disclaimer/']"));
 

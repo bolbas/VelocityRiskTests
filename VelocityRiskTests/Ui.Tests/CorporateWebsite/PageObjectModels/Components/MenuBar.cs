@@ -1,8 +1,9 @@
 ﻿using OpenQA.Selenium;
+using Ui.Tests.Common;
 
 namespace Ui.Tests.CorporateWebsite.PageObjectModels.Components
 {
-    public class MenuBar : BaseComponent
+    public class MenuBar : CommonBaseComponent
     {
         public MenuBar(IWebDriver driver) : base(driver) { }
 
