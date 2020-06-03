@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using Ui.Tests.PolicyAdminSystem.PageObjectModels.Components;
+using System.Collections.ObjectModel;
 
 namespace Ui.Tests.PolicyAdminSystem.PageObjectModels
 {
@@ -22,11 +23,13 @@ namespace Ui.Tests.PolicyAdminSystem.PageObjectModels
 
         public IWebElement UpdateNumberOfRisksButton => Driver.FindElement(By.XPath("//button[@data-test-id ='policy-wizard-risks-counter-submit']"));
 
-        public IWebElement EditLocationAddressButton => Driver.FindElement(By.XPath("//button[@data-test-id='policy-wizard-risks-edit-address-0']"));
+        public ReadOnlyCollection<IWebElement> AddAddressButtons => Driver.FindElements(By.XPath("//button[@type='button' and contains(., 'Add an Address')]"));
 
-        public IWebElement EnterRiskAndCoverageDetailsButton => Driver.FindElement(By.XPath("//button[@data-test-id='policy-wizard-risks-add-rating-0']"));
+        public ReadOnlyCollection<IWebElement> EditLocationAddressButtons => Driver.FindElements(By.XPath("//button[@type='button' and contains(., 'Edit Location Address')]"));
+
+        public ReadOnlyCollection<IWebElement> EnterRiskAndCoverageDetailsButtons => Driver.FindElements(By.XPath("//span[text()='Enter Risk & Coverage Details']/parent::button"));
        
-        public IWebElement DeleteButton => Driver.FindElement(By.XPath("//button[@data-test-id='policy-wizard-risks-prop-delete-0']"));
+        public ReadOnlyCollection<IWebElement> DeleteButtons => Driver.FindElements(By.XPath("//button[@type='button' and contains(., 'Delete')]"));
 
         public IWebElement CopyInformationAcrossLocationsButton => Driver.FindElement(By.XPath("//button[@data-test-id='policy-wizard-risks-copy-risk']"));
 
