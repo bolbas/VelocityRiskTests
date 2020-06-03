@@ -24,6 +24,10 @@ namespace Ui.Tests.PolicyAdminSystem.PageObjectModels
         public IWebElement EditLocationAddressButton => Driver.FindElement(By.XPath("//button[@data-test-id='policy-wizard-risks-edit-address-0']"));
 
         public IWebElement EnterRiskAndCoverageDetailsButton => Driver.FindElement(By.XPath("//button[@data-test-id='policy-wizard-risks-add-rating-0']"));
+       
+        public IWebElement DeleteButton => Driver.FindElement(By.XPath("//button[@data-test-id='policy-wizard-risks-prop-delete-0']"));
+
+        public IWebElement CopyInformationAcrossLocationsButton => Driver.FindElement(By.XPath("//button[@data-test-id='policy-wizard-risks-copy-risk']"));
 
         public IWebElement GetAQuoteButton => Driver.FindElement(By.XPath("//button[text() ='Get a Quote']"));
 
