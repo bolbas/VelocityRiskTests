@@ -35,5 +35,10 @@ namespace Ui.Tests.PolicyAdminSystem.Steps
         {
             return element.GetAttribute("value");
         }
+
+        public void Click(IWebElement element)
+        {
+            element.Click();
+        }
     }
 }

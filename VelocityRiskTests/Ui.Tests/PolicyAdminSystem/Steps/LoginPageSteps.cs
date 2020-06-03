@@ -16,12 +16,12 @@ namespace Ui.Tests.PolicyAdminSystem.Steps
         public void SetPasswordInputValue(string value) => SetTextBoxValue(Page.PasswordTextBox, value);
         public string GetPasswordInputValue() => GetTextBoxValue(Page.PasswordTextBox);
 
-        public void ClickCantRememberLink() => Page.CantRememberLink.Click();
-        public void ClickCantRememberCloseModalWindowButton() => Page.CantRememberModalWindowCloseButton.Click();
+        public void ClickCantRememberLink() => Click(Page.CantRememberLink);
+        public void ClickCantRememberCloseModalWindowButton() => Click(Page.CantRememberModalWindowCloseButton);
         public void SetCantRememberEmailInputValue(string value) => SetTextBoxValue(Page.CantRememberEmailTextBox, value);
         public string GetCantRememberEmailInputValue() => GetTextBoxValue(Page.CantRememberEmailTextBox);
-        public void ClickCantRememberOkButton() => Page.CantRememberCancelButton.Click();
+        public void ClickCantRememberOkButton() => Click(Page.CantRememberCancelButton);
 
-        public void ClickLogInButton() => Page.LoginButton.Click();
+        public void ClickLogInButton() => Click(Page.LoginButton);
     }
 }
