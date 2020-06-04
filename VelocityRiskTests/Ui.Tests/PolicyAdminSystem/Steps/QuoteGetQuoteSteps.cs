@@ -18,41 +18,46 @@ namespace Ui.Tests.PolicyAdminSystem.Steps
 
         public void ClickDeductiblePercent1Button()
         {
-            Page.DeductiblePercent1Button?.Click();
+            Page.DeductiblePercent1Button.Click();
         }
 
         public void ClickDeductiblePercent2Button()
         {
-            Page.DeductiblePercent2Button?.Click();
+            Page.DeductiblePercent2Button.Click();
         }
 
         public void ClickDeductiblePercent3Button()
         {
-            Page.DeductiblePercent3Button?.Click();
+            Page.DeductiblePercent3Button.Click();
         }
 
         public void ClickDeductiblePercent5Button()
         {
-            Page.DeductiblePercent5Button?.Click();
+            Page.DeductiblePercent5Button.Click();
         }
 
         public void ClickDeductiblePercent10Button()
         {
-            Page.DeductiblePercent10Button?.Click();
+            Page.DeductiblePercent10Button.Click();
         }
 
         #endregion Deductibles
 
         #region Earthquake Premium
 
+        public bool IsEarthquakePremiumCheckboxChecked()
+        {
+            return Convert.ToBoolean(Page.EarthquakePremiumCheckboxInput.GetAttribute("value"));
+        }
+
         public void ClickEarthquakePremiumCheckbox()
         {
-            Page.EarthquakePremiumCheckbox?.Click();
+            Page.EarthquakePremiumCheckbox.Click();
         }
 
         public void CheckEarthquakePremiumCheckbox()
         {
-            var isChecked = Convert.ToBoolean(Page.EarthquakePremiumCheckboxInput?.GetAttribute("value"));
+            var isChecked = IsEarthquakePremiumCheckboxChecked();
             if (!isChecked)
             {
                 Page.EarthquakePremiumCheckbox.Click();
@@ -61,7 +66,7 @@ namespace Ui.Tests.PolicyAdminSystem.Steps
 
         public void UncheckEarthquakePremiumCheckbox()
         {
-            var isChecked = Convert.ToBoolean(Page.EarthquakePremiumCheckboxInput?.GetAttribute("value"));
+            var isChecked = IsEarthquakePremiumCheckboxChecked();
             if (isChecked)
             {
                 Page.EarthquakePremiumCheckbox.Click();
